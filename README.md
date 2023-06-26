@@ -4,8 +4,6 @@ Route table
 | --------------------------- | -------------- | ------------- | --------------- | ------------------------ |
 | /                           |                | GET           | read            | home.ejs                 |
 | /monitors                   | index          | GET           | read            | monitor-index.ejs        |
-| /monitors/gaming            | index          | GET           | read            | gaming-index.ejs         |
-| /monitors/office            | index          | GET           | read            | office-index.ejs         |
 | /monitors/:id               | show           | GET           | read            | monitor-details.ejs      |
 | /monitors/new               | new            | GET           |                 | new-monitor.ejs          |
 | /monitors                   | create         | POST          | create          |                          |
