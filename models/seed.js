@@ -1,7 +1,7 @@
 const monitors = [
     {
         name: "Dell U2723QE",
-        description: "asdf",
+        description: "Features an IPS Black panel that shows deeper black colors. A USB hub with  5 USB-A and 3 USB-C ports",
         screenSize: 27,
         resolution: "3840x2160",
         refreshRate: 60,

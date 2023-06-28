@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'Monitor Reviews'}) %>
+    <link rel="stylesheet" href="/styles/monitor-index.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <main>
+        <section class="monitorCard">
+            <h1><%= category %> Monitors</h1>
+            <ul>
+                <% for (let monitor of monitors) { %>
+                <li>
+                    <figure>
+                        <a href="/monitors/<%= monitor._id %>"><img src="<%= monitor.photo %>"></a>
+                        <figcaption>
+                            <h4><%= monitor.name %></h4>
+                            <p><%= monitor.category %></p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+
+
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

@@ -12,10 +12,16 @@ const db = require('../models')
 
 /* Routes
 --------------------------------------------------------------- */
-// index route
+// index route with conditional to show monitors by category
 router.get('/', function (req, res) {
-    db.Monitor.find({})
-        .then(monitors => res.render('monitors/monitor-index', { monitors: monitors }))
+    const category = req.query.category;
+    let filter = {};
+
+    if (category) {
+        filter = { category: category };
+    }
+    db.Monitor.find(filter)
+        .then(monitors => res.render('monitors/monitor-index', { monitors: monitors, category: category }))
 })
 
 // new route

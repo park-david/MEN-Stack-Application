@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: `${monitor.name}`}) %>
+    <link rel="stylesheet" href="/styles/monitor-details.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="monitor">
+        <img src="<%= monitor.photo %>">
+        <h2 class="monitorName"><%= monitor.name %></h2>
+        <ul>
+            <p>Description: <%= monitor.description %></p>
+            <p>Screen Size: <%= monitor.screenSize %></p>
+            <p>Resolution: <%= monitor.resolution %></p>
+            <p>Refresh Rate: <%= monitor.refreshRate %></p>
+            <p>Panel Type: <%= monitor.panelType %></p>
+            <p>Curved: <%= monitor.curved %></p>
+            <p>Category: <%= monitor.category %></p>
+        </ul>
+        <a class="editBtn" href="/monitors/<%= monitor._id %>/edit">Edit</a>
+    </div>
+
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

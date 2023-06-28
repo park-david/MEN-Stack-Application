@@ -1,0 +1,32 @@
+nav {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    border: 2px solid blue;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border: 2px solid green;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all, .gaming, .office {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    height: 50vh;
+}
