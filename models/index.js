@@ -13,6 +13,6 @@ db.on('connected', function () {
 
 
 module.exports = {
-    Product: require('./monitor'),
-    seedProducts: require('./seed')
+    Monitor: require('./monitor'),
+    seedMonitors: require('./seed')
 }

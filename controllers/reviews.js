@@ -12,7 +12,7 @@ const db = require('../models')
 
 /* Routes
 --------------------------------------------------------------- */
-// index, all reviews
+// index route
 router.get('/', (req, res) => {
     db.Monitor.find({}, { reviews: true, _id: false })
         .then(monitors => {
@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
         })
 });
 
-// New Route: GET localhost:3000/reviews/new/:monitorId
+// new route
 router.get('/new/:monitorId', (req, res) => {
     db.Monitor.findById(req.params.monitorId)
         .then(monitor => {
@@ -34,7 +34,7 @@ router.get('/new/:monitorId', (req, res) => {
         })
 })
 
-// Create Route: POST localhost:3000/reviews/
+// create route
 router.post('/create/:monitorId', (req, res) => {
     db.Monitor.findByIdAndUpdate(
         req.params.monitorId,
@@ -44,7 +44,7 @@ router.post('/create/:monitorId', (req, res) => {
         .then(() => res.redirect('/monitors/' + req.params.monitorId))
 });
 
-// Show Route: GET localhost:3000/reviews/:id
+// show route
 router.get('/:id', (req, res) => {
     db.Monitor.findOne(
         { 'reviews._id': req.params.id },
@@ -57,7 +57,7 @@ router.get('/:id', (req, res) => {
         })
 });
 
-// Destroy Route: DELETE localhost:3000/reviews/:id
+// destroy route
 router.delete('/:id', (req, res) => {
     db.Monitor.findOneAndUpdate(
         { 'reviews._id': req.params.id },

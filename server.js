@@ -52,7 +52,9 @@ app.use(methodOverride('_method'));
 
 /* Mount routes
 --------------------------------------------------------------- */
-
+app.get('/', function (req, res) {
+    res.render('home')
+});
 
 // seed database
 app.get('/seed', function (req, res) {
