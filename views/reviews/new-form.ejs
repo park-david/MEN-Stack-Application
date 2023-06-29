@@ -10,8 +10,7 @@
     <%- include('../partials/nav.ejs') %>
 
     <div class="review">
-        <h2>Monitor Review</h2>
-        <h4><i>Reviewing <a href="/monitors/<%= monitor._id %>"></a></i></h4>
+        <h4>Reviewing: <%= monitor.name %></h4>
     </div>
 
     <form action="/reviews/create/<%= monitor._id %>" method="POST">

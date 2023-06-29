@@ -1,10 +1,15 @@
 img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     min-width: 200px;
     min-height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 54px;
 }
 
 .monitor {  display: grid;
@@ -17,29 +22,39 @@ img {
       ". photo details ."
       ". reviews reviews ."
       ". . . .";
+
   }
   
 .photo {
     grid-area: photo;
     display: flex;
     justify-content: center;
+
 }
   
 .details {
     grid-area: details;
 }
-  
+
 .reviews {
+    margin-top: 0;
     grid-area: reviews;
-    border: 2px solid red;
-    padding: 30px;
-    height: fit-content;
-    max-height: 50vh;
-    overflow-y: overlay;
+    text-align: left;
+    justify-content: left;
+}
+
+.reviews ul {
+    list-style: none;
     width: 100%;
 }
-  
+
+.reviews li {
+    border: 2px solid gray;
+    margin: 5px;
+}
+
 .monitorName {
     grid-area: name;
 }
   
+

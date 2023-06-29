@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Prompt', sans-serif;
 }
 
 body {
@@ -23,7 +24,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: 0px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid gray;
 }
 
 h1 {
@@ -42,7 +43,7 @@ footer {
     display: flex;
     width: 100%;
     padding: 1rem;
-    border-top: 2px white solid;
+    border-top: 2px solid gray;
 }
 
 div {
@@ -58,4 +59,8 @@ a {
     align-items: center;
     text-decoration: none;
     font-size: large;
+}
+
+select, input, textarea, option {
+    color: black;
 }

@@ -15,9 +15,9 @@
         <div class="details">
             <ul>
                 <p>Description: <%= monitor.description %></p>
-                <p>Screen Size: <%= monitor.screenSize %></p>
+                <p>Screen Size: <%= monitor.screenSize %>''</p>
                 <p>Resolution: <%= monitor.resolution %></p>
-                <p>Refresh Rate: <%= monitor.refreshRate %></p>
+                <p>Refresh Rate: <%= monitor.refreshRate %>hz</p>
                 <p>Panel Type: <%= monitor.panelType %></p>
                 <p>Curved: <%= monitor.curved %></p>
                 <p>Category: <%= monitor.category %></p>
@@ -34,24 +34,20 @@
                 </div>
             </ul>
         </div>
+        <% if (monitor.reviews.length > 0) { %>
+            <div class="reviews" open>
+                <ul>
+                    <% for (let review of monitor.reviews) { %>
+                    <li>
+                        <h2><%= review.name %></h2>
+                        <p> <%= review.review %></p>
+                        <a href="/reviews/<%= review._id %>">Read More</a>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+            <% } %>
     </div>
-
-    <% if (monitor.reviews.length > 0) { %>
-        <div class="reviews" open>
-            <h1>Monitor Reviews</h1>
-            <hr>
-            <ul>
-                <% for (let review of monitor.reviews) { %>
-                <li>
-                    <h2><%= review.name %></h2>
-                    <p> <%= review.review %></p>
-                    <a href="/reviews/<%= review._id %>">Read More</a>
-                </li>
-                <% } %>
-            </ul>
-        </div>
-        <% } %>
-
     <%- include('../partials/footer.ejs') %>
 </body>
 

@@ -6,8 +6,23 @@ main {
     flex-wrap: wrap;
 }
 
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
 .monitorCard {
-    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+h4, p {
+    text-align: center;
 }
 
 .monitorCard h1 {
@@ -18,14 +33,11 @@ main {
 .monitorCard ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
 }
 
 .monitorCard li {
     margin-bottom: 40px;
-    border: 2px solid #ccc;
     padding: 20px;
     border-radius: 4px;
     position: relative;
@@ -33,6 +45,8 @@ main {
     display: inline-block;
     box-sizing: border-box;
     width: 500px;
+    background: linear-gradient(#696a6b,#232f3c);
+    border-radius: 10%;
 }
 
 .monitorCard li img {
