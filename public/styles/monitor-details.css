@@ -1,0 +1,44 @@
+img {
+    width: 300px;
+    min-width: 200px;
+    min-height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.monitor {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". name name ."
+      ". photo details ."
+      ". reviews reviews ."
+      ". . . .";
+  }
+  
+.photo {
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+}
+  
+.details {
+    grid-area: details;
+}
+  
+.reviews {
+    grid-area: reviews;
+    border: 2px solid red;
+    padding: 30px;
+    height: fit-content;
+    max-height: 50vh;
+    overflow-y: overlay;
+    width: 100%;
+}
+  
+.monitorName {
+    grid-area: name;
+}
+  

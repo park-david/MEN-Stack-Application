@@ -7,13 +7,28 @@
 </head>
 
 <body>
-    <%- include('./partials/nav.ejs') %>
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="review">
+        <h2>Monitor Review</h2>
+        <h4><i>Reviewing <a href="/monitors/<%= monitor._id %>"></a></i></h4>
+    </div>
+
+    <form action="/reviews/create/<%= monitor._id %>" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="review">Review:</label><br>
+        <textarea id="review" name="review" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
 
 
-
-
-
-    <%- include('./partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>
 </body>
 
 </html>

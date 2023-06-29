@@ -1,32 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
 nav {
-    border: 2px solid red;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    background: linear-gradient(red, yellow);
+    margin: 0px;
+}
+
+h1 {
+    font-size: 65px;
+    margin: auto;
+}
+
+div.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
 }
 
 footer {
-    border: 2px solid blue;
+    background-color: gray;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
 }
 
 div {
     display: flex;
     justify-content: center;
     margin: 10px;
-    border: 2px solid green;
+    align-items: center;
 }
 
 a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.all, .gaming, .office {
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    flex-direction: column;
-    height: 50vh;
+    text-decoration: none;
+    font-size: large;
 }

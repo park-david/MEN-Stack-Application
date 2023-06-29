@@ -1,0 +1,17 @@
+.categorys {
+    height: 50vh;
+}
+
+div.home{
+    color: red;
+}
+
+.all, .gaming, .office {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+    width: 200px;
+    text-align: center;
+    border: 2px solid gray;
+}

@@ -7,13 +7,27 @@
 </head>
 
 <body>
-    <%- include('./partials/nav.ejs') %>
+    <%- include('../partials/nav.ejs') %>
+
+    <main>
+        <div class="reviews">
+            <ul>
+                <% for (let review of reviews) { %>
+                <li>
+                    <h4><%= review.name %> - <%= review.title %></h4>
+                    <p>
+                        Submitted on <%= review.review %>
+                    </p>
+                    <a href="/reviews/<%= review._id %>">Read More</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </main>
 
 
 
-
-
-    <%- include('./partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>
 </body>
 
 </html>
