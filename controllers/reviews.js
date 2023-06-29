@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
         .then(monitors => {
             const flatList = []
             for (let monitor of monitors) { flatList.push(...monitor.reviews) }
-            res.render('reviews/review-index', { revs: flatList })
+            res.render('reviews/review-index', { review: flatList })
         })
 });
 
@@ -51,9 +51,7 @@ router.get('/:id', (req, res) => {
         { 'reviews.$': true, _id: false }
     )
         .then(product => {
-            // format query results to appear in one object, 
-            // rather than an object containing an array of one object
-            res.render('reviews/review-details', { rev: product.reviews[0] })
+            res.render('reviews/review-details', { review: product.reviews[0] })
         })
 });
 

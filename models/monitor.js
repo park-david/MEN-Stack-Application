@@ -13,7 +13,7 @@ const monitorSchema = new mongoose.Schema ({
     curved: { type: Boolean, default: false, required: true },
     category: { type: String, enum: ['Gaming', 'Office'], required: true },
     photo: { type: String, required: true },
-    // reviews: [reviewSchema]
+    reviews: [reviewSchema]
 });
 
 

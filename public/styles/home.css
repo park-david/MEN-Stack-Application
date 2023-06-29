@@ -1,6 +1,9 @@
-.categorys {
-    height: 50vh;
-}
+.categories {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 div.home{
     color: red;

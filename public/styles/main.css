@@ -2,18 +2,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body {
     min-height: 100vh;
+    background-image: url(../assets/hexagon_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(red, yellow);
     margin: 0px;
+    border-bottom: 2px solid white;
 }
 
 h1 {
@@ -28,11 +38,11 @@ div.nav {
 }
 
 footer {
-    background-color: gray;
     justify-content: center;
     display: flex;
     width: 100%;
     padding: 1rem;
+    border-top: 2px white solid;
 }
 
 div {
