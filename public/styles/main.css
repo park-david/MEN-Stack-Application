@@ -61,6 +61,6 @@ a {
     font-size: large;
 }
 
-select, input, textarea, option {
+select, input, textarea, option, .editBtn, .reviewBtn {
     color: black;
 }

@@ -41,7 +41,3 @@ td h2 {
     align-items: center;
     justify-content: right;
 }
-
-body {
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(183, 183, 230));
-}
