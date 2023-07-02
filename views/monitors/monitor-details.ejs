@@ -22,12 +22,8 @@
                 <p>Curved: <%= monitor.curved %></p>
                 <p>Category: <%= monitor.category %></p>
                 <div class="actions">
-                    <button>
-                        <a class="editBtn" href="/monitors/<%= monitor._id %>/edit">Edit</a>
-                    </button>
-                    <button>
-                        <a class="reviewBtn" href="/reviews/new/<%= monitor._id %>">Review</a>
-                    </button>
+                    <a class="btn" href="/monitors/<%= monitor._id %>/edit">Edit</a>
+                    <a class="btn" href="/reviews/new/<%= monitor._id %>">Review</a>
                     <form method="POST" action="/monitors/<%= monitor._id %>?_method=DELETE">
                         <input class="btn" type="submit" value="Delete" />
                     </form>

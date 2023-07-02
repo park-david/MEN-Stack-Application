@@ -61,6 +61,23 @@ a {
     font-size: large;
 }
 
-select, input, textarea, option, .editBtn, .reviewBtn {
-    color: black;
+select, input, textarea, option, .btn, input[type='button'], input[type='submit'] {
+    color: white;
+}
+
+.btn, input[type='button'], input[type='submit'] {
+    appearance: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    width: 70px;
+    min-width: fit-content;
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(#696a6b,#232f3c);
+    border: none;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
 }
