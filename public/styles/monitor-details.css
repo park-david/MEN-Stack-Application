@@ -29,7 +29,6 @@ h2 {
     grid-area: photo;
     display: flex;
     justify-content: center;
-
 }
   
 .details {
@@ -55,4 +54,11 @@ h2 {
 
 .monitorName {
     grid-area: name;
+}
+
+@media (max-width: 700px) {
+    .monitor {
+        display: flex;
+        flex-direction: column;
+    }
 }

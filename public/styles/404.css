@@ -1,5 +1,4 @@
 body {
-    background: url(../assets/404.png) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -26,8 +25,7 @@ h1 {
     font-size: calc(36px + 2vw);
 }
 
-p,
-a {
+p, a {
     font-size: calc(20px + 0.5vw);
     text-decoration: none;
     margin-top: 2rem;
@@ -35,4 +33,8 @@ a {
 
 a {
     margin-top: auto;
+}
+
+* {
+    color: black;
 }
