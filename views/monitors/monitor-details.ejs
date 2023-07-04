@@ -14,13 +14,13 @@
         <h2 class="monitorName"><%= monitor.name %></h2>
         <div class="details">
             <ul>
-                <p>Description: <%= monitor.description %></p>
-                <p>Screen Size: <%= monitor.screenSize %>''</p>
-                <p>Resolution: <%= monitor.resolution %></p>
-                <p>Refresh Rate: <%= monitor.refreshRate %>hz</p>
-                <p>Panel Type: <%= monitor.panelType %></p>
-                <p>Curved: <%= monitor.curved %></p>
-                <p>Category: <%= monitor.category %></p>
+                <li>Description: <%= monitor.description %></li>
+                <li>Screen Size: <%= monitor.screenSize %>''</li>
+                <li>Resolution: <%= monitor.resolution %></li>
+                <li>Refresh Rate: <%= monitor.refreshRate %>hz</li>
+                <li>Panel Type: <%= monitor.panelType %></li>
+                <li>Curved: <%= monitor.curved ? 'Yes' : 'No' %></li>
+                <li>Category: <%= monitor.category %></li>
                 <div class="actions">
                     <a class="btn" href="/monitors/<%= monitor._id %>/edit">Edit</a>
                     <a class="btn" href="/reviews/new/<%= monitor._id %>">Review</a>

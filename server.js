@@ -55,7 +55,6 @@ app.use(express.static('public'))
 app.use(methodOverride('_method'));
 
 
-
 /* Mount routes
 --------------------------------------------------------------- */
 app.get('/', function (req, res) {
@@ -91,8 +90,6 @@ app.use('/reviews', reviewCtrl)
 app.get('*', function (req, res) {
     res.render('404')
 });
-
-
 
 
 /* Tell the app to listen on the specified port

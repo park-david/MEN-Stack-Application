@@ -1,7 +1,9 @@
+const reviewSchema = require("./review")
+
 const monitors = [
     {
         name: "Dell U2723QE",
-        description: "Features an IPS Black panel that shows deeper black colors. A USB hub with  5 USB-A and 3 USB-C ports",
+        description: "Features an IPS Black panel that shows deeper black colors. A USB hub with 5 USB-A and 3 USB-C ports.",
         screenSize: 27,
         resolution: "3840x2160",
         refreshRate: 60,
@@ -13,7 +15,7 @@ const monitors = [
     },
     {
         name: "Asus ProArt Display PA278CV",
-        description: "asdf",
+        description: "Features an integrated USB-C port, factory calibrated and Calman Verified to deliver superb color accuracy, industry-standard 100% sRGB / 100% Rec. 709 color space coverage.",
         screenSize: 27,
         resolution: "2560x1440",
         refreshRate: 75,
@@ -25,7 +27,7 @@ const monitors = [
     },
     {
         name: "LG 40WP95C-W",
-        description: "asdf",
+        description: "Features autobrightness with ambient light sensor. Wider color spectrum, vibrant color reproduction with the support of HDR10.",
         screenSize: 40,
         resolution: "5120x2160",
         refreshRate: 72,
@@ -37,7 +39,7 @@ const monitors = [
     },
     {
         name: "Gigabyte M32U",
-        description: "asdf",
+        description: "World's first KVM gaming monitor.",
         screenSize: 32,
         resolution: "3840x2160",
         refreshRate: 144,
@@ -49,7 +51,7 @@ const monitors = [
     },
     {
         name: "LG 27GR95QE-B",
-        description: "asdf",
+        description: "World's first 240hz OLED monitor.",
         screenSize: 27,
         resolution: "2560x1440",
         refreshRate: 240,
@@ -61,7 +63,7 @@ const monitors = [
     },
     {
         name: "LG UltraGear 34GP950G-B",
-        description: "asdf",
+        description: "Features VESA DisplayHDR™ 600 to elevate visuals, Black Stabilizer® to balance darker contrasts.",
         screenSize: 34,
         resolution: "3440x1440",
         refreshRate: 180,
