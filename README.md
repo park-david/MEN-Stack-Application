@@ -34,8 +34,15 @@ Route table
 
 ## Installation Instructions
 
-Fork and clone to local environment.
-Install necessary packages with npm i.
+- Fork and clone to local environment
+- Install necessary packages with ***npm i***
+- Create .env file and add these lines
+
+    PORT=3000
+    
+    MONGODBURI="mongodb+srv://yourUsername:**REPLACEWITHYOURDATABASE**"
+
+- start application with ***npm run dev*** or ***node server.js***
 
 ## User Stories
 
