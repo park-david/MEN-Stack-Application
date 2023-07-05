@@ -42,7 +42,7 @@ Route table
     
     MONGODBURI="mongodb+srv://yourUsername:**REPLACEWITHYOURDATABASE**"
 
-- start application with ***npm run dev*** or ***node server.js***
+- Start application with ***npm run dev*** or ***node server.js***
 
 ## User Stories
 
