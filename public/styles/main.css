@@ -20,7 +20,7 @@ main {
     flex-grow: 1;
 }
 
-nav {
+nav, .dropdown {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,4 +93,39 @@ select, input, textarea, option, .btn, input[type='button'], input[type='submit'
       display: flex;
       flex-direction: column;
     }
+}
+
+.dropdown {
+    display: inline-block;
+    border-bottom: 0;
+}
+
+.dropBtns {
+    display: none;
+    min-width: 100px;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+}
+
+.dropBtns a {
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropBtns {
+    display: block;
+}
+
+.nav a:hover, footer a:hover {
+    background: linear-gradient(#696a6b,#232f3c);
+}
+
+.nav a {
+    width: 80px;
+    border-radius: 5px;
+}
+
+footer a {
+    border-radius: 5px;
 }

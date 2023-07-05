@@ -1,8 +1,6 @@
 img {
-    max-width: 100%;
-    height: 400px;
-    min-width: 400px;
-    min-height: 150px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -14,14 +12,13 @@ h2 {
 
 .monitor {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1.5fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". name name ."
       ". photo details ."
-      ". reviews reviews ."
-      ". . . .";
+      ". reviews reviews .";
   }
   
 .photo {
@@ -38,11 +35,13 @@ h2 {
     grid-area: details;
 }
 
-.reviews {
+.reviews, .reviews h2 {
     margin-top: 0;
     grid-area: reviews;
     text-align: left;
     justify-content: left;
+    align-self: flex-start;
+    width: 100%;
 }
 
 .reviews ul {
@@ -52,7 +51,15 @@ h2 {
 
 .reviews li {
     border: 2px solid gray;
-    margin: 50px;
+    margin: 30px;
+    padding: 10px;
+}
+
+li p {
+    overflow: hidden;
+    resize: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 li {
@@ -63,9 +70,17 @@ li {
     grid-area: name;
 }
 
-@media (max-width: 700px) {
-    .monitor {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 848px) {
+    div.monitor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .photo {
+        width: 70%;
+    }
+    .reviews {
+        justify-content: center;
+        margin: 0;
     }
 }

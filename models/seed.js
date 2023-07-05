@@ -72,7 +72,31 @@ const monitors = [
         curved: true,
         category: "Gaming",
         photo: "https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/f74fb7e5-cf6b-4bd6-8fd9-3f77cc41b7b6/md08000841-Z-01-jpg"
-    }
+    },
+    {
+        name: "ViewSonic XG2431",
+        description: "Blur Busters approved, capable of reaching <0.5ms MPRT response times. ",
+        screenSize: 24,
+        resolution: "1920x1080",
+        refreshRate: 240,
+        responseTime: "0.5ms",
+        panelType: "IPS",
+        curved: false,
+        category: "Gaming",
+        photo: "https://m.media-amazon.com/images/I/61AP9G5K2pL._AC_SL1500_.jpg"
+    },
+    {
+        name: "Samsung Odyssey OLED G8",
+        description: "OLED screen enhanced with the Neo Quantum Processor to improve color contrasts. Access to streaming services via Gaming Hub with Samsung's streaming technology.",
+        screenSize: 34,
+        resolution: "3440x1440",
+        refreshRate: 175,
+        responseTime: "0.03ms",
+        panelType: "QD-OLED",
+        curved: true,
+        category: "Gaming",
+        photo: "https://images.samsung.com/is/image/samsung/p6pim/ca/ls34bg850snxza/gallery/ca-odyssey-oled-g8-g85sb-ls34bg850snxza-534932670?$684_547_PNG$"
+    },
 ]
 
 module.exports = monitors

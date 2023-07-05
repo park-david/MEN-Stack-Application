@@ -81,3 +81,12 @@ figcaption {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 848px) {
+    .monitorCard li {
+        width: 100%;
+    }
+    img {
+        object-fit: contain;
+    }
+}

@@ -9,28 +9,17 @@
 <body>
     <%- include('../partials/nav.ejs') %>
 
-    <div class="reviewDetails">
-        <h1>Name: <%= review.name %></h1>
-        <table>
-            <tr>
-                <th>
-                    <h2>Title:</h2>
-                </th>
-                <td>
-                    <h2><%= review.title %></h2>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <h2>Review:</h2>
-                </th>
-                <td>
-                    <h2><%= review.review %></h2>
-                </td>
-            </tr>
-            </tr>
-        </table>
-
+    <div class="reviewIndex">
+        <section class="left">
+            <h2>Name:</h2>
+            <p><%= review.name %></p>
+        </section>
+        <section class="right">
+            <h2>Title:</h2>
+            <p><%= review.title %></p>
+            <h2>Review:</h2>
+            <p><%= review.review %></p>
+        </section>
     </div>
 
     <%- include('../partials/footer.ejs') %>
