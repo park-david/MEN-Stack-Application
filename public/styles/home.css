@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .categories {
     flex: 1;
     display: flex;
@@ -5,16 +11,13 @@
     justify-content: center;
   }
 
-.all, .gaming, .office {
+.card {
     display: flex;
     flex-direction: column;
     height: 400px;
     flex-wrap: wrap;
     width: 250px;
     text-align: center;
-    margin-top: 50%;
-    margin-bottom: 50%;
     background: linear-gradient(#696a6b,#232f3c);
     border-radius: 10%;
 }
-
