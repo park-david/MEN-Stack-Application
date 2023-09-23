@@ -21,3 +21,7 @@ main {
     background: linear-gradient(#696a6b,#232f3c);
     border-radius: 10%;
 }
+
+.card:hover {
+      background: linear-gradient(#232f3c, #696a6b);
+}
