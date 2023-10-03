@@ -134,3 +134,7 @@ select, input, textarea, option, .btn, input[type='button'], input[type='submit'
 footer a {
     border-radius: 5px;
 }
+
+.siteName:hover {
+    scale: 1.05;
+}
